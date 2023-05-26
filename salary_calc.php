@@ -10,5 +10,7 @@ $salary_increase_rate = $salary_increase_rate / 100 + 1;
 for ($i = 1; $i <= 10; ++$i) {
     echo $i . '年目の給料は' . $salary . '円です。' . PHP_EOL;
     echo '手取りは' . $salary * 0.75 . '~' . $salary * 0.85 . '円です。' . PHP_EOL;
+    echo '毎月の手取りは' . $salary * 0.75 / 12 . '~' . $salary * 0.85 / 12 . '円です。' . PHP_EOL;
+    echo '---------------------------' . PHP_EOL;
     $salary = $salary * $salary_increase_rate;
 }
